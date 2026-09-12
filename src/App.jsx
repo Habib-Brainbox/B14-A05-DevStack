@@ -11,7 +11,7 @@ export default function App() {
   const [loading, setLoading] = useState(true);
   const [menuOpen, setMenuOpen] = useState(false);
 
-  // Fetch JSON data and handle loading state
+  // Fetch JSON data and handle loading state//
   useEffect(() => {
     fetch('/technologies.json')
       .then(res => res.json())
@@ -22,7 +22,7 @@ export default function App() {
       .catch(() => setLoading(false));
   }, []);
 
-  // Add selected item to the stack panel
+  // Add selected item to the stack panel//
   const handleAddToStack = (tech) => {
     const isExist = stack.find(item => item.id === tech.id);
     if (isExist) {
@@ -33,14 +33,14 @@ export default function App() {
     toast.success(`${tech.name} added to your stack!`);
   };
 
-  // Remove single item from the stack
+  // Remove single item from the stack//
   const handleRemoveItem = (id) => {
     const remaining = stack.filter(item => item.id !== id);
     setStack(remaining);
     toast.info("Item removed from stack.");
   };
 
-  // Clear all items from the stack at once
+  // Clear all items from the stack at once//
   const handleRemoveAll = () => {
     setStack([]);
     toast.error("All items cleared from your stack.");

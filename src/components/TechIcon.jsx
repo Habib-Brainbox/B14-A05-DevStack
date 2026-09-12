@@ -30,7 +30,7 @@ const iconMap = [
   { match: "java", Icon: FaJava, color: "#EA2D2E", exclude: "script" },
 ];
 
-// Reusable icon resolver + component used by TechCard, Sidebar, or anywhere else
+// Reusable icon resolver + component used by TechCard, Sidebar, or anywhere else //
 export default function TechIcon({ name, size = 40 }) {
   const key = name?.toLowerCase().trim().replace(/[\s.\-]+/g, "");
 
