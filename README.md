@@ -45,4 +45,4 @@ A parent passes data down to a child using props (for example, `<TechCard tech={
 
 ## Submission
 - **GitHub Repository Link:** https://github.com/Habib-Brainbox/B14-A05-DevStack
-- **Live Site Link:** (add your deployed link here after deployment)
+- **Live Site Link:** https://lucky-travesseiro-20f805.netlify.app
